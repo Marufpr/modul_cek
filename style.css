@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300;1,800&display=swap');
+
+:root {
+    --text-color-1: #39b0a2;
+    
+    --back-up-color: #030303;
+    --font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+}
+
+p{
+    font-weight: bold;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('pexels-asadphoto-457878.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 27px;
+    color: #090707;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+li a {
+    color: #010101;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    transition: 0.6s;
+}
+
+li a:hover {
+    background-color: var(--text-color-1);
+}
+
+.active {
+    background-color: var(--text-color-blend);
+}
+
+button {
+    border: 2px solid var(--back-up-color);
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--back-up-color);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: var(--back-up-color);
+    color: #000000;
+}
+
+/* Hero content */
+.home-content {
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.home-container {
+    align-items: center;
+    width: 60%;
+}
+
+.home-container h1 {
+    color: #070606;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.home-container p {
+    color: #080707;
+    padding-bottom: 30px;
+}
+
+#explore {
+    margin-left: 30px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    width: 100;
+    color: #FFF;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    font-size: 14px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--text-color-1);
+}
